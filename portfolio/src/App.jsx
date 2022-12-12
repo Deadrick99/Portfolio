@@ -5,7 +5,7 @@ import Navbar from './navigation';
 import Hero from './hero';
 function App() {
     return (
-      <div className=''>
+      <div >
         <Navbar /> 
            
       <Hero/>
