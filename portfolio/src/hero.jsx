@@ -19,7 +19,7 @@ const Hero =()=>{
             <section >
             
                 <div className="text-center p-10 " >
-                    <div className="text-center p-10 py-60 mb-[-6rem] h-screen">
+                    <div className="text-center p-10 py-60 mb-[-6rem] mt-[-3rem] h-screen">
                         <div className='bg-teal-300  h-[22rem] w-[22rem]  md:w-[45rem] md:h-[35rem] m-auto mb-[-22rem]  z-0 animate-hero'> </div>
                         <div className="my-auto z-5 relative" >
                         <h2 className="text-5xl py-2 text-teal-600 font-medium">William Simmons</h2>
@@ -36,35 +36,35 @@ const Hero =()=>{
             
                     <h2 className='mt-16 mb-8 text-center text-4xl text-teal-500 font-medium'>Skills</h2>
                     <div className=' h-20 flex ' >
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis1 ? ' animate-slideRight' :''}`} ref={skillRef1}>
-                            <SiTailwindcss className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis1 ? ' animate-slideRight5' :''}`} ref={skillRef1}>
+                            <SiTailwindcss className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis2 ? ' animate-slideRight' :''}`} ref={skillRef2}>
-                        <SiRedux className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600  ${skillVis2 ? ' animate-slideRight4' :''}`} ref={skillRef2}>
+                        <SiRedux className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis3 ? ' animate-slideRight' :''}`}ref={skillRef3}>
-                        <SiHtml5 className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis3 ? ' animate-slideRight3' :''}`}ref={skillRef3}>
+                        <SiHtml5 className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis4 ? ' animate-slideRight' :''}`}ref={skillRef4}>
-                        <SiCss3 className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis4 ? ' animate-slideRight2' :''}`}ref={skillRef4}>
+                        <SiCss3 className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis5 ? ' animate-slideRight' :''}`}ref={skillRef5}>
-                        <SiReact className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis5 ? ' animate-slideRight' :''}`}ref={skillRef5}>
+                        <SiReact className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis6 ? ' animate-slideLeft' :''}`}ref={skillRef6}>
-                        <SiBootstrap className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis6 ? ' animate-slideLeft' :''}`}ref={skillRef6}>
+                        <SiBootstrap className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis7 ? ' animate-slideLeft' :''}`}ref={skillRef7}>
-                        <SiJavascript className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis7 ? ' animate-slideLeft2' :''}`}ref={skillRef7}>
+                        <SiJavascript className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis8 ? ' animate-slideLeft' :''}`}ref={skillRef8}>
-                        <SiMysql className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis8 ? ' animate-slideLeft3' :''}`}ref={skillRef8}>
+                        <SiMysql className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis9? ' animate-slideLeft' :''}`}ref={skillRef9}>
-                        <SiNodedotjs className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis9? ' animate-slideLeft4' :''}`}ref={skillRef9}>
+                        <SiNodedotjs className='m-auto text-2xl md:text-4xl'/>
                         </div>
-                        <div className={`flex m-auto text-center bg-teal-500 rounded-full w-16 h-16 ${skillVis10 ? ' animate-slideLeft' :''}`}ref={skillRef10}>
-                        <SiCsharp className='m-auto'/>
+                        <div className={`flex md:m-auto text-center mx-1 bg-teal-500 rounded-full w-20 h-20 hover:cursor-pointer hover:bg-teal-600 ${skillVis10 ? ' animate-slideLeft5' :''}`}ref={skillRef10}>
+                        <SiCsharp className='m-auto text-2xl md:text-4xl'/>
                         </div>
                     </div>
                 </div>
