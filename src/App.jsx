@@ -6,6 +6,7 @@ import {FaLinkedin,FaGithub} from'react-icons/fa'
 import {SiTailwindcss, SiRedux,SiHtml5,SiCss3,SiReact,SiBootstrap, SiJavascript, SiMysql,SiNodedotjs,SiCsharp} from 'react-icons/si'
 import { useInView } from "react-intersection-observer"
 import {BiDownArrowAlt} from "react-icons/bi"
+import Algo from "./assets/Algo.png"
 
 
 function App() {
@@ -19,21 +20,24 @@ function App() {
    const {ref: skillRef8,inView:skillVis8} = useInView()
    const {ref: skillRef9,inView:skillVis9} = useInView()
    const {ref: skillRef10,inView:skillVis10} = useInView()
+   const {ref: cardRef1, inView:cardVis1} = useInView()
     
     return (
       <div className='w-full '>
         <nav className= "flex justify-around">
             
-                <span className="text-teal-500 text-5xl font-black">WS</span>
+                
                 <div className='flex mt-1 '>
                     
-                <button className=" mr-4 cursor-pointer border-[.1em] pointer-events-none before:reflection border-teal-500 box-shadow text-teal-500 text-3xl rounded-[.25em] relative after:reflection-on hover:after:opacity-100  hover:text-black ">
-                    <a href="#Skills" className='px-4 pb-2 text-shadow pointer-events-auto '>Skills</a>
+                <button className=" mr-4 cursor-pointer border-[.1em] pointer-events-none before:reflection border-teal-500 box-shadow text-teal-500  text-3xl rounded-[.25em] relative after:reflection-on hover:after:opacity-100  hover:text-black ">
+                    <a href="#Skills" className='md:px-4 md:pb-2 text-shadow pointer-events-auto '>Skills</a>
                     </button>
                     
-                   
+                   <button className=" mr-4 cursor-pointer border-[.1em] pointer-events-none before:reflection border-teal-500 box-shadow text-teal-500 text-3xl rounded-[.25em] relative after:reflection-on hover:after:opacity-100  hover:text-black ">
+                    <a href="#Portfolio" className='md:px-4 pb-2 text-shadow pointer-events-auto '>My Work</a>
+                    </button>
                 <button className=" cursor-pointer border-[.1em] pointer-events-none before:reflection border-teal-500 box-shadow text-teal-500 text-3xl rounded-[.25em] relative after:reflection-on hover:after:opacity-100  hover:text-black ">
-                    <a href={Resume} download className='px-4 pb-2 text-shadow pointer-events-auto '>Resume</a>
+                    <a href={Resume} download className='md:px-4 pb-2 text-shadow pointer-events-auto '>Resume</a>
                     </button>
                     
                 </div>
@@ -115,9 +119,40 @@ function App() {
                 </div>
             </section>
             <section id='Portfolio'>
-              <h2 className='text-teal-500 text-center text-4xl pt-20'>My Work</h2>
+              <h2 className='text-teal-500 text-center mt-[30rem] text-4xl md:mt-20'>My Work</h2>
               <div className='flex flex-col'>
-                <div></div>
+                <div className={`text-white m-auto w-[95%] md:w-4/5 mt-10 border-2 flex-col md:flex-row flex border-teal-500 rounded-xl ${cardVis1 ? 'animate-slideRight4' :''}`} ref={cardRef1}>
+                    
+                    <div className='p-2 m-auto h-full w-full md:w-1/2'>
+                        <img src={Algo} className=" rounded-md object-scale-down"></img>
+                    </div>
+                    <div className='p-2 h-full w-ful md:w-1/2'>
+                        <h3 className='md:translate-y-0 text-center text-2xl text-teal-500'>Search Algorithm Visualizer</h3>
+                        <div className='bg-teal-500 3xl:my-10 my-4 w-full rounded-lg'>
+                        <p className=' text-black w-[90%] 3xl:w-[80%] m-auto text-lg text-center text-bold'>This was a project to start my react journy. This project visualizes two popular search algorithms A-Star and Dijkstras. It implements Recursive Division maze creation. Finally it allows you to update the path for new walls, start, or endpoints in real time.</p>
+                        </div>
+                        <h3 className=' text-center text-2xl text-teal-500'>Tech Used</h3>
+                        <div className='flex justify-evenly 3xl:mt-10 mt-4 bg-teal-500 h-20 rounded-lg'>
+                        <div className='flex bg-black rounded-full w-16 h-16 m-auto'>
+                            <SiJavascript className='m-auto  text-teal-500 text-2xl '/>
+                        </div>
+                        <div className='flex bg-black rounded-full w-16 h-16 m-auto'>
+                            <SiCss3 className='m-auto text-teal-500 text-2xl '/>
+                        </div>
+                        <div className='flex bg-black rounded-full w-16 h-16 m-auto'>
+                            <SiHtml5 className='m-auto text-teal-500 text-2xl '/>
+                        </div>
+                        </div>
+                        <div className='flex justify-evenly 3xl:mt-10 mt-8'>
+                            <div className='flex bg-teal-500 w-40 h-16 rounded-lg hover:cursor-pointer'>
+                            <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://melodious-cucurucho-7c1466.netlify.app/'>View Live</a>
+                            </div>
+                            <div className='flex bg-teal-500  w-40 h-16 rounded-lg hover:cursor-pointer'>
+                            <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://github.com/Deadrick99/Algorithm-Visulizer'>View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </section>
        

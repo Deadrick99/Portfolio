@@ -25,7 +25,7 @@
 
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
      filter:blur(1em);
-    opacity: .5;
+    opacity: 0;
   }
   .reflection:hover{
     opacity: 1;

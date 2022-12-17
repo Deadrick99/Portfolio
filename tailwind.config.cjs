@@ -4,6 +4,9 @@ module.exports = {
 
   theme: {
     extend: {
+      screens: {
+        "3xl": "2100px",
+      },
       keyframes: {
         hero: {
           "0%": {
