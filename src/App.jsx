@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import '../dist/output.css'
+import '../src/output.css'
 import Resume from "./assets/William Simmons.pdf"
 import {FaLinkedin,FaGithub} from'react-icons/fa'
 import {SiTailwindcss, SiRedux,SiHtml5,SiCss3,SiReact,SiBootstrap, SiJavascript, SiMysql,SiNodedotjs,SiCsharp} from 'react-icons/si'
