@@ -6,7 +6,7 @@ import {FaLinkedin,FaGithub} from'react-icons/fa'
 import {SiTailwindcss, SiRedux,SiHtml5,SiCss3,SiReact,SiBootstrap, SiJavascript, SiMysql,SiNodedotjs,SiCsharp} from 'react-icons/si'
 import { useInView } from "react-intersection-observer"
 import {BiDownArrowAlt} from "react-icons/bi"
-import Algo from "./assets/Algo.png"
+import Algo from "./assets/Algo.png" 
 
 
 function App() {
