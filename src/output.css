@@ -553,6 +553,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -593,8 +603,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mt-\[30rem\] {
-  margin-top: 30rem;
+.mt-\[36rem\] {
+  margin-top: 36rem;
 }
 
 .mt-10 {
@@ -663,6 +673,14 @@ video {
 
 .w-40 {
   width: 10rem;
+}
+
+.w-\[-85\%\] {
+  width: -85%;
+}
+
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .max-w-xl {
@@ -744,7 +762,7 @@ video {
   0% {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 
   100% {
@@ -762,7 +780,7 @@ video {
   0% {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 
   100% {
@@ -776,7 +794,25 @@ video {
   animation: slideLeft .5s ease-out;
 }
 
-@keyframes slideRight {
+@keyframes slideLeftProj {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+.animate-slideLeftProj {
+  animation: slideLeftProj 2s ease-out;
+}
+
+@keyframes slideRightProj {
   0% {
     opacity: 0;
     filter: blur(5px);
@@ -790,8 +826,8 @@ video {
   }
 }
 
-.animate-slideRight4 {
-  animation: slideRight 2s ease-out;
+.animate-slideRightProj {
+  animation: slideRightProj 2s ease-out;
 }
 
 .cursor-pointer {
@@ -848,6 +884,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-teal-500 {
@@ -1046,6 +1086,11 @@ video {
   cursor: pointer;
 }
 
+.hover\:bg-teal-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1083,8 +1128,8 @@ video {
     width: 45rem;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:w-\[85\%\] {
+    width: 85%;
   }
 
   .md\:w-4\/5 {
@@ -1104,7 +1149,25 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(-100%);
+      transform: translateX(-200%);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  }
+
+  .md\:animate-slideRight6 {
+    animation: slideRight 3s ease-out;
+  }
+
+  @keyframes slideRight {
+    0% {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-200%);
     }
 
     100% {
@@ -1122,7 +1185,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
 
     100% {
@@ -1140,7 +1203,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
 
     100% {
@@ -1158,7 +1221,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
 
     100% {
@@ -1176,7 +1239,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
 
     100% {
@@ -1194,7 +1257,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
 
     100% {
@@ -1212,7 +1275,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
 
     100% {
@@ -1230,7 +1293,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
 
     100% {
@@ -1248,7 +1311,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
 
     100% {
@@ -1266,7 +1329,7 @@ video {
     0% {
       opacity: 0;
       filter: blur(5px);
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
 
     100% {
@@ -1278,6 +1341,24 @@ video {
 
   .md\:animate-slideLeft5 {
     animation: slideLeft 2.5s ease-out;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(200%);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  }
+
+  .md\:animate-slideLeft6 {
+    animation: slideLeft 3s ease-out;
   }
 
   .md\:flex-row {

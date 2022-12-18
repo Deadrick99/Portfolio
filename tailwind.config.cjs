@@ -48,11 +48,115 @@ module.exports = {
           "0%": {
             opacity: 0,
             filter: "blur(5px)",
-            transform: "translateX(-100%)",
+            transform: "translateX(-200%)",
           },
           "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
         },
         slideLeft: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideRight2: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideLeft2: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideRight3: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideLeft3: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideRight4: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideLeft4: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideRight5: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideLeft5: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideRight6: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-200%)",
+          },
+          "100%": {
+            opacity: 1,
+            filter: "blur(0)",
+            transform: "translateX(0)",
+          },
+        },
+        slideLeft6: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(200%)",
+          },
+          "100%": {
+            opacity: 1,
+            filter: "blur(0)",
+            transform: "translateX(0)",
+          },
+        },
+        slideRightProj: {
+          "0%": {
+            opacity: 0,
+            filter: "blur(5px)",
+            transform: "translateX(-100%)",
+          },
+          "100%": { opacity: 1, filter: "blur(0)", transform: "translateX(0)" },
+        },
+        slideLeftProj: {
           "0%": {
             opacity: 0,
             filter: "blur(5px)",
@@ -64,15 +168,19 @@ module.exports = {
       animation: {
         hero: "hero 20s ease-in-out infinite ",
         slideRight: "slideRight .5s ease-out",
+        slideRightProj: "slideRightProj 2s ease-out",
         slideRight2: "slideRight 1s ease-out",
         slideRight3: "slideRight 1.5s ease-out",
         slideRight4: "slideRight 2s ease-out",
         slideRight5: "slideRight 2.5s ease-out",
+        slideRight6: "slideRight 3s ease-out",
         slideLeft: "slideLeft .5s ease-out",
+        slideLeftProj: "slideLeftProj 2s ease-out",
         slideLeft2: "slideLeft 1s ease-out",
         slideLeft3: "slideLeft 1.5s ease-out",
         slideLeft4: "slideLeft 2s ease-out",
         slideLeft5: "slideLeft 2.5s ease-out",
+        slideLeft6: "slideLeft 3s ease-out",
       },
     },
   },
