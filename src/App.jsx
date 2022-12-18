@@ -25,10 +25,7 @@ function App() {
    const {ref: skillRef12,inView:skillVis12} = useInView()
    const {ref: cardRef1, inView:cardVis1} = useInView()
    const {ref: cardRef2, inView:cardVis2} = useInView()
-     function onSubmit()
-     {
-
-     }
+    
     return (
       <div className='w-full '>
         <nav className= "flex justify-around">
@@ -233,7 +230,7 @@ function App() {
             <section id='Contact'>
               <h2 className='text-teal-500 text-center mt-[36rem] text-4xl md:mt-20'>Contact Me</h2>
                 <div className='w-[85%] border-4 m-auto border-teal-500 rounded-md '>
-                    <form action="POST" data-netlify="true">
+                    <form name="contact" netlify>
                         <div>
                             <input className='m-auto' type="text" name="Name / Comapny" placeholder='Name / Company'/>
                         </div>
@@ -242,7 +239,7 @@ function App() {
                         </div>
                            <div>
                             <textarea className='m-auto' type="text" name="message" placeholder='Additional Info...' rows={7}/>
-                            <button type='submit'>Sumbmit</button>
+                            <button className='text-white' type='submit'>Sumbit</button>
                         </div>
                     </form>
                 </div>
