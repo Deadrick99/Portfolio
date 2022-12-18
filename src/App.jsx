@@ -230,7 +230,7 @@ function App() {
             <section id='Contact'>
               <h2 className='text-teal-500 text-center mt-[36rem] text-4xl md:mt-20'>Contact Me</h2>
                 <div className='w-[85%] border-4 m-auto border-teal-500 rounded-md '>
-                    <form name="contact" netlify>
+                    <form name="contact" data-netlify="true">
                         <div>
                             <input className='m-auto' type="text" name="Name / Comapny" placeholder='Name / Company'/>
                         </div>
