@@ -242,7 +242,7 @@ function App() {
                         </div>
                            <div>
                             <textarea className='m-auto' type="text" name="message" placeholder='Additional Info...' rows={7}/>
-                            <button>Sumbmit</button>
+                            <button type='submit'>Sumbmit</button>
                         </div>
                     </form>
                 </div>
