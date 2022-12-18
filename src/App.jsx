@@ -245,7 +245,7 @@ function App() {
         <input
           className="m-auto"
           type="email"
-          name="Email"
+          name="email"
           placeholder="Email@gmail.com"
         />
       </div>
