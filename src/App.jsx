@@ -10,6 +10,7 @@ import Pet from "./assets/Pet.png"
 import Algo from "./assets/Algo.png" 
 
 
+
 function App() {
    const {ref: skillRef1,inView:skillVis1} = useInView()
    const {ref: skillRef2,inView:skillVis2} = useInView()
@@ -230,19 +231,37 @@ function App() {
             <section id='Contact'>
               <h2 className='text-teal-500 text-center mt-[36rem] text-4xl md:mt-20'>Contact Me</h2>
                 <div className='w-[85%] border-4 m-auto border-teal-500 rounded-md '>
-                    <form name="contact" method='post' data-netlify="true"  onSubmit="submit">
-                        <input type='hidden' name="form-name" value="contact"></input>
-                        <div>
-                            <input className='m-auto' type="text" name="Name / Comapny" placeholder='Name / Company'/>
-                        </div>
-                        <div>
-                            <input className='m-auto' type="email" name="Email" placeholder='Email@gmail.com'/>
-                        </div>
-                           <div>
-                            <textarea className='m-auto' type="text" name="message" placeholder='Additional Info...' rows={7}/>
-                            <button className='text-white' type='submit'>Sumbit</button>
-                        </div>
-                    </form>
+                    <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+      <input type="hidden" name="form-name" value="contact"></input>
+      <div>
+        <input
+          className="m-auto"
+          type="text"
+          name="Name / Comapny"
+          placeholder="Name / Company"
+        />
+      </div>
+      <div>
+        <input
+          className="m-auto"
+          type="email"
+          name="Email"
+          placeholder="Email@gmail.com"
+        />
+      </div>
+      <div>
+        <textarea
+          className="m-auto"
+          type="text"
+          name="message"
+          placeholder="Additional Info..."
+          rows={7}
+        />
+        <button className="text-white" type="submit">
+          Sumbit
+        </button>
+      </div>
+    </form>
                 </div>
               </section>
       </div>
