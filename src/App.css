@@ -43,4 +43,7 @@
     z-index: -1;
     transition: opacity 100ms linear;
   }
+  .placeholder::placeholder{
+    color:rgb(0 0 0);
+  }
 }

@@ -51,20 +51,21 @@ function App() {
         <section >
             
                 <div className="text-center " >
-                    <div className="text-center p-10 py-60 mb-[-4rem] mt-[-3rem] h-screen">
-                        <div className='bg-teal-300  h-[25rem] w-[22rem] translate-x-[-1rem] md:w-[45rem] md:h-[35rem] m-auto mb-[-22rem] box-shadow  z-0 animate-hero'> </div>
-                        <div className="my-auto z-5 relative" >
-                        <h2 className="text-5xl py-2 text-teal-600 font-medium">William Simmons</h2>
-                             <p className="text-md py-2 leading-8 text-white max-w-xl mx-auto">Hi, I am focused in full stack web developement. If you like my work please feel free to reachout!</p>
+                    <div className="text-center p-10 py-60 mt-[-11rem]  h-screen">
+                        <div className='bg-teal-300 h-[40rem] w-[30rem] md:translate-x-[-1rem] translate-x-[-5rem] md:w-[50rem] md:h-[40rem] m-auto mb-[-22rem] box-shadow  z-0 animate-hero'> </div>
+                        <div className=" md:translate-y-[-6rem] translate-y-[-10rem] z-5 relative" >
+                        <h2 className="text-5xl m-auto py-2 text-black font-semibold">William Simmons</h2>
+                        <h2 className="text-3xl m-auto py-2 text-black font-semibold">Full Stack Developer</h2>
+                             <p className=" py-2 m-auto leading-8 text-xl font-medium text-black max-w-xl ">Hi, I am a software engineer who focuses on full stack development. I graduated with a BS in Computer Science from ETSU in Dec 2022. Feel free to contact me. </p>
                         
                     </div>
-                    <div className='text-5xl text-teal-500  flex justify-center gap-16 relative'>
-                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/williamasimmons-se'><FaLinkedin className='hover:text-teal-600'/></a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/Deadrick99'><FaGithub className='hover:text-teal-600'/></a>
+                    <div className='text-5xl  text-black md:translate-y-[-6rem] translate-y-[-10rem]  flex justify-center gap-16 relative'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/williamasimmons-se'><FaLinkedin className='md:hover:scale-110'/></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/Deadrick99'><FaGithub className='md:hover:scale-110'/></a>
                     </div>
                     </div>
                     <div className="flex flex-col">
-                        <p className='m-auto text-teal-500 text-xl mt-[-1rem] text-shadow'>Scroll</p>
+                        <p className='m-auto text-teal-500 text-xl md:mt-[-1rem] mt-12 text-shadow'>Scroll</p>
                         <BiDownArrowAlt className='m-auto mt-1 text-7xl animate-bounce text-teal-500'/>
                     </div>
             
@@ -177,10 +178,10 @@ function App() {
                         </div>
                         </div>
                         <div className='flex justify-evenly 3xl:mt-10 mt-8'>
-                            <div className='flex bg-teal-500 w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
+                            <div className='flex bg-teal-500 text-x w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
                             <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://marvelous-gumption-ec7d4e.netlify.app/'>View Live</a>
                             </div>
-                            <div className='flex bg-teal-500  w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
+                            <div className='flex bg-teal-500 text-x w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
                             <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://github.com/Deadrick99/petstore'>View Github</a>
                             </div>
                         </div>
@@ -215,10 +216,10 @@ function App() {
                         </div>
                         </div>
                         <div className='flex justify-evenly 3xl:mt-10 mt-8'>
-                            <div className='flex bg-teal-500 w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
+                            <div className='flex bg-teal-500 text-xl w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
                             <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://melodious-cucurucho-7c1466.netlify.app/'>View Live</a>
                             </div>
-                            <div className='flex bg-teal-500  w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
+                            <div className='flex bg-teal-500 text-x  w-40 h-16 rounded-lg hover:cursor-pointer hover:bg-teal-600 hover:scale-110'>
                             <a className='text-black m-auto' target="_blank" rel="noopener noreferrer" href='https://github.com/Deadrick99/Algorithm-Visulizer'>View Github </a>
                             </div>
                         </div>
@@ -229,41 +230,45 @@ function App() {
               </div>
             </section>
             <section id='Contact'>
-              <h2 className='text-teal-500 text-center mt-[36rem] text-4xl md:mt-20'>Contact Me</h2>
-                <div className='w-[85%] border-4 m-auto border-teal-500 rounded-md '>
-                    <form name="contact" method="post" data-netlify="true" onSubmit="submit">
-      <input type="hidden" name="form-name" value="contact"></input>
-      <div>
-        <input
-          className="m-auto"
-          type="text"
-          name="Name / Comapny"
-          placeholder="Name / Company"
-        />
-      </div>
-      <div>
-        <input
-          className="m-auto"
-          type="email"
-          name="email"
-          placeholder="Email@gmail.com"
-        />
-      </div>
-      <div>
-        <textarea
-          className="m-auto"
-          type="text"
-          name="message"
-          placeholder="Additional Info..."
-          rows={7}
-        />
-        <button className="text-white" type="submit">
-          Sumbit
-        </button>
-      </div>
-    </form>
+              <h2 className='text-teal-500 text-center mt-12  text-4xl md:mt-20 mb-12'>Contact Me</h2>
+                <div className='w-[95%] md:w-4/5 border-2 m-auto  border-teal-500 rounded-xl '>
+                <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+                <input type="hidden" name="form-name" value="contact"></input>
+                < div className="flex flex-col md:flex-row mb-2 mt-4">
+                    <input
+                    className="m-auto w-[80%] my-4 md:my-0  md:w-[30%] placeholder rounded-md tex-black text-bold bg-teal-500"
+                    type="text"
+                    name="Name / Comapny"
+                    placeholder="Name / Company"
+                    />
+                
+                    <input
+                    className="m-auto w-[80%] my-4 md:my-0 md:w-[30%] placeholder rounded-md tex-black text-bold bg-teal-500"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    />
                 </div>
-              </section>
+                <div className="flex">
+                    
+                    <textarea
+                    className="m-auto w-[80%] my-2 rounded-md tex-black text-bold placeholder bg-teal-500"
+                    type="text"
+                    name="message"
+                    placeholder="Additional Info..."
+                    rows={7}
+                    />
+                </div>
+                <div className='flex'>
+                    <button  className="text-black w-[40%] md:w-[10%] hover:scale-110 hover:cursor-pointer hover:bg-teal-600 h-12 text-xl bg-teal-500 rounded-md m-auto mt-2 mb-4" type="submit">
+                    Sumbit
+                    </button>
+                </div>
+      
+            </form>
+             </div>
+        </section>
+        <div className='text-teal-500 my-4 text-center'>William Simmons © 2023 </div>
       </div>
   );
 }
