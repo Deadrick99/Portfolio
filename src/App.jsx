@@ -42,7 +42,7 @@ function App() {
                     <a href="#Portfolio" className='md:px-4 pb-2 text-shadow pointer-events-auto '>My Work</a>
                     </button>
                 <button className=" cursor-pointer border-[.1em] pointer-events-none before:reflection border-teal-500 box-shadow text-teal-500 text-3xl rounded-[.25em] relative after:reflection-on hover:after:opacity-100  hover:text-black ">
-                    <a href={"https://william-simmons.netlify.app/William Simmons.pdf"} download className='md:px-4 pb-2 text-shadow pointer-events-auto '>Resume</a>
+                    <a href={"./assets/William Simmons.pdf"} download className='md:px-4 pb-2 text-shadow pointer-events-auto '>Resume</a>
                     </button>
                     
                 </div>
